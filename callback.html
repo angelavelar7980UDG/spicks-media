@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conexión · Spicks App</title><link rel="stylesheet" href="estilo.css"></head>
+<body><h1>Conexión con TikTok</h1><p id="m">Revisando…</p>
+<p>Copia la dirección completa de esta página (la barra de arriba) y mándasela a Claude.</p>
+<script>const q=new URLSearchParams(location.search);document.getElementById('m').textContent=q.get('code')?'Listo: TikTok mandó el código de conexión.':(q.get('error')?'TikTok respondió con un error: '+q.get('error'):'Sin código todavía.');</script>
+<footer><a href="index.html">Spicks App</a></footer></body></html>
